@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        表单标签 form  仅仅只是一个空白的 单子而已  里面是没有内容的 
+        如果你希望在表单中看到某个元素 需要自己一个一个的去写 单独的表单元素 就是 写在form中的标签
+        action=""  里面填写的 自己后台的路径
+        method=""  方式/方法
+    -->
+    <form action="" method="">
+        <!-- 表单元素input 简单输入框 -->
+        账号: <input type="text"/> <br/>
+        <!-- 表单元素 密码框 -->
+        密码: <input type="password"/><br/>
+        <!-- 表单元素 单选框 -->
+        <!-- 
+            单选框 是需要有 互斥效果 如果想要有互斥效果
+            那么 单选框之间 需要有一个 相同值得 name属性
+         -->
+        性别: <input type="radio" name="sex"/>男  <input name="sex" type="radio"/>女<br/>
+        <!-- type="checkbox"  复选框 -->
+        爱好：<input type="checkbox"/>吃  <input  type="checkbox"/>喝 
+         <input  type="checkbox"/>玩 <input  type="checkbox"/>乐<br/>
+        头像: <input type="file"/><br/>
+        <!-- 
+            下拉框  确实是 select 可以写
+            但是下拉框中的 元素  并不能直接写  需要 option 的标签
+         -->
+        地址:
+            <select>
+                <option>--请选择--</option>
+                <option>--四川--</option>
+                <option>--山西--</option>
+                <option>--湖南--</option>
+            </select>
+            <select>
+                <option>--请选择--</option>
+                <option>--成都--</option>
+                <option>--宜宾--</option>
+                <option>--乐山--</option>
+            </select><br/>
+        <!-- 文本域 -->
+        自我介绍: 
+        <textarea cols="50" rows="10"></textarea><br/>
+        <!-- 按钮 -->
+        <!-- 
+            value属性 可以更改标签中的 值
+            type="submit" 表示该按钮可以提交所在表单的数据
+             type="reset" 表示该按钮可以重置所在表单的数据
+         -->
+        <input type="submit" value="提交数据"/>
+        <input type="reset" value="重置页面"/>
+        <input type="button" value="我是一个按钮"/>
+    </form>
+</body>
+</html>
